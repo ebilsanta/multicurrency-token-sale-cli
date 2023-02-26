@@ -4,6 +4,7 @@
 + [About](#about)
 + [Setting up](#setup)
 + [Examples](#examples)
++ [Bonus question](#bonus)
 
 ## About <a name = "about"></a>
 This is a CLI app to calculate the amount of SALE token a given amount of ETH would fetch.  
@@ -92,4 +93,11 @@ CURRENT
 6540825.876543210987654325 18 DOGE 992465.123456789012345678
 6540825.876543210987654325 18 BTC 992465.123456789012345678
 ```
+
+## Bonus question <a name="bonus"></a>
+I'm guessing that SALE amount is rounded down since it's the only way to guarantee that the buyer will never be able to purchase more of the token than their cryptocurrency is worth.  
+
+Rounding up will always allow the buyer to purchase a higher value of the token than what they pay for.   
+
+Rounding off can result in both higher and lower values depending on the last digit of the specified precision. 
 
