@@ -5,7 +5,8 @@
     "dev": "npx tsx ./solution.ts",
     "watch-and-run": "ts-node-dev --respawn -- src/index.ts",
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "start": "node build/index"
   },
   "main": "src/index.ts",
   "module": "es2022",
