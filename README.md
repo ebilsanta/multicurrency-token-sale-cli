@@ -21,6 +21,11 @@ Clone the app
 git clone https://github.com/ebilsanta/cake-token-exercise
 ```
 
+Change directory
+```
+cd cake-token-exercise
+```
+
 Install dependencies
 
 ```
