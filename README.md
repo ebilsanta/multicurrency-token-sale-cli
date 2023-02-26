@@ -15,6 +15,11 @@ Refer to [Examples](#examples) for more details on how to use it.
 
 ## Setting up <a name = "setup"></a>
 
+Clone the app
+```
+git clone https://github.com/ebilsanta/cake-token-exercise
+```
+
 Install dependencies
 
 ```
