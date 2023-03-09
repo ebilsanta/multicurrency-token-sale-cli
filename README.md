@@ -1,15 +1,24 @@
-# cake-token-exercise
+# multicurrency-token-sale-cli
 
 ## Table of Contents
 + [About](#about)
 + [Setting up](#setup)
 + [Examples](#examples)
-+ [Bonus question](#bonus)
 
 ## About <a name = "about"></a>
-This is a CLI app to calculate the amount of SALE token a given amount of ETH would fetch.  
+Supposedly there's a token sale that sells token X (SALE token) for the base currency, token Y (ETH).
+This is a CLI app to calculate the amount of SALE token a given amount of ETH would fetch. ETHSALE rate is the rate of amount of SALE that 1 ETH can get and is provided as an input with the app.
 
-It can either fetch live market rates from 
+A token sale may also want to accept another cryptocurrency other than ETH, such as BTC and DOGE. As the price of SALE is fixed at ETH, and BTCUSD price fluctuates according to market, BTCSALE has to be computed based on market rate of BTCUSD and ETHUSD. 
+
+#### Example
+
+1. ETHSALE rate is determined to be 1 ETH to 5000 SALE at start of app.
+1. BTCUSD is given as 10000, ETHUSD is 200. It can be worked out that BTCETH is thus 50.
+1. A purchase with 5 ETH would yield 25,000 SALE
+1. A purchase with 2.4 BTC would yield 600,000 SALE
+
+This app can either fetch live market rates from 
 [Coincap](https://coincap.io) or calculate using specified market rates. 
 
 Refer to [Examples](#examples) for more details on how to use it. 
@@ -98,11 +107,3 @@ CURRENT
 6540825.876543210987654325 18 DOGE 992465.123456789012345678
 6540825.876543210987654325 18 BTC 992465.123456789012345678
 ```
-
-## Bonus question <a name="bonus"></a>
-I'm guessing that SALE amount is rounded down since it's the only way to guarantee that the buyer will never be able to purchase more of the token than their cryptocurrency is worth.  
-
-Rounding up will always allow the buyer to purchase a higher value of the token than what they pay for.   
-
-Rounding off can result in both higher and lower values depending on the last digit of the specified precision. 
-
